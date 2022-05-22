@@ -38,7 +38,7 @@ docker exec -it kafkaweb_redis redis-cli
     - `np` not persisted requests. 
 - `get key-name` actual value of `key-name`.
 
-Use Apache Bench to send a 100k requests, 1k batchs:
+Use Apache Bench to send 100k requests in 1k batchs:
 ```sh
 ab -n 100000 -c 1000 -l http://localhost:8888/
 ```
